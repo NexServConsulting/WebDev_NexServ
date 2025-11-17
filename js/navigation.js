@@ -38,6 +38,16 @@ function initializeStickyHeader() {
 
     let lastScrollY = window.scrollY;
     let headerHeight = header.offsetHeight;
+    let isHeaderSticky = false;
+    let scrollTimeout;
+
+    // Ensure header is positioned correctly from the start
+    header.style.position = 'fixed';
+    header.style.top = '0';
+    header.style.left = '0';
+    header.style.right = '0';
+    header.style.zIndex = '1030';
+    header.style.transition = 'transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease';
 
     // Update header height on resize
     const updateHeaderHeight = throttle(() => {
@@ -52,33 +62,54 @@ function initializeStickyHeader() {
     const handleScroll = throttle(() => {
         const currentScrollY = window.scrollY;
 
-        // Add/remove scrolled class
-        if (currentScrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-
-        // Hide/show header on scroll (mobile only)
-        if (window.innerWidth <= 768) {
-            if (currentScrollY > lastScrollY && currentScrollY > headerHeight) {
-                // Scrolling down
-                header.style.transform = `translateY(-100%)`;
-            } else {
-                // Scrolling up or at top
-                header.style.transform = `translateY(0)`;
+        // Always make header sticky when scrolling down
+        if (currentScrollY > 10) {
+            if (!isHeaderSticky) {
+                header.classList.add('scrolled');
+                header.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+                header.style.backdropFilter = 'blur(10px)';
+                header.style.webkitBackdropFilter = 'blur(10px)';
+                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+                isHeaderSticky = true;
             }
         } else {
-            header.style.transform = `translateY(0)`;
+            if (isHeaderSticky) {
+                header.classList.remove('scrolled');
+                header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.1)';
+                isHeaderSticky = false;
+            }
         }
+
+        // On all devices, always show header when scrolling
+        header.style.transform = `translateY(0)`;
 
         lastScrollY = currentScrollY;
     }, 16); // ~60fps
 
     window.addEventListener('scroll', handleScroll, { passive: true });
 
+    // Handle window resize for responsive behavior
+    window.addEventListener('resize', debounce(() => {
+        // Reset transform on resize to ensure proper positioning
+        header.style.transform = window.innerWidth <= 768 && window.scrollY > headerHeight + 50 ?
+            `translateY(-100%)` : `translateY(0)`;
+    }, 250));
+
     // Initialize scroll position
     handleScroll();
+
+    // Add scroll direction detection for better UX
+    let scrollDirection = 'down';
+    window.addEventListener('scroll', throttle(() => {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll > lastScrollY) {
+            scrollDirection = 'down';
+        } else if (currentScroll < lastScrollY) {
+            scrollDirection = 'up';
+        }
+        lastScrollY = currentScroll;
+    }, 100));
 }
 
 /**
