@@ -1005,7 +1005,7 @@
     height: 80px;
     margin: 0 auto var(--space-6);
     border-radius: var(--radius-xl);
-    background: var(--color-light-gray);
+    background: var(--bg-light);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1014,7 +1014,7 @@
 
 .value-card:hover .value-icon {
     transform: scale(1.1);
-    background: var(--color-dark-gray);
+    background: var(--border-light);
 }
 
 .value-card h3 {
