@@ -1,0 +1,922 @@
+/* ===================================
+   WebDev NexServ - Responsive Styles
+   Mobile-first responsive design
+   =================================== */
+
+/* Base Mobile Styles (320px and up) */
+@media (max-width: 480px) {
+    /* Typography adjustments */
+    .container {
+        padding: 0 var(--space-4);
+    }
+
+    .page-title {
+        font-size: var(--font-size-3xl);
+        line-height: 1.2;
+    }
+
+    .page-subtitle {
+        font-size: var(--font-size-base);
+    }
+
+    /* Spacing adjustments */
+    .section {
+        padding: var(--space-12) 0;
+    }
+
+    .section-lg {
+        padding: var(--space-16) 0;
+    }
+
+    /* Hero adjustments */
+    .hero {
+        padding: var(--space-16) 0 var(--space-12);
+        min-height: auto;
+    }
+
+    .hero-content {
+        padding: 0 var(--space-4);
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: var(--font-size-4xl);
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-base);
+        margin-bottom: var(--space-6);
+    }
+
+    .hero-cta {
+        justify-content: center;
+        gap: var(--space-3);
+    }
+
+    .hero-visual {
+        min-height: 200px;
+        margin-top: var(--space-8);
+    }
+
+    .hero-element {
+        transform: scale(0.7);
+    }
+
+    .hero-element:nth-child(1) {
+        width: 120px;
+        height: 120px;
+    }
+
+    .hero-element:nth-child(2) {
+        width: 100px;
+        height: 100px;
+    }
+
+    .hero-element:nth-child(3) {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Service cards */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+
+    .service-card {
+        padding: var(--space-6);
+    }
+
+    .service-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Portfolio grid */
+    .portfolio-items {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+
+    .portfolio-content {
+        padding: var(--space-4);
+    }
+
+    /* Testimonials */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+
+    .testimonial-card {
+        padding: var(--space-6);
+    }
+
+    .testimonial-card::before {
+        font-size: 3rem;
+        top: var(--space-2);
+        left: var(--space-4);
+    }
+
+    /* FAQ accordion */
+    .faq-question {
+        padding: var(--space-4);
+        font-size: var(--font-size-sm);
+    }
+
+    .faq-answer > div {
+        padding: 0 var(--space-4) var(--space-4);
+        font-size: var(--font-size-sm);
+    }
+
+    /* Forms */
+    .consultation-form {
+        padding: var(--space-6);
+    }
+
+    .step-header {
+        flex-direction: column;
+        gap: var(--space-2);
+        text-align: center;
+        padding-bottom: var(--space-4);
+    }
+
+    .step-header h3 {
+        font-size: var(--font-size-lg);
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions .btn {
+        width: 100%;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    /* Stats grid */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-6);
+    }
+
+    .stat-number {
+        font-size: var(--font-size-3xl);
+    }
+
+    /* Team grid */
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+
+    /* Process timeline */
+    .process-timeline::before {
+        left: 10px;
+    }
+
+    .process-step {
+        gap: var(--space-4);
+    }
+
+    .step-number {
+        width: 30px;
+        height: 30px;
+        font-size: var(--font-size-sm);
+    }
+
+    /* Value cards */
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+
+    .value-card {
+        padding: var(--space-6);
+    }
+
+    .value-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Package cards */
+    .packages-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+
+    .package {
+        padding: var(--space-6);
+    }
+
+    .package.featured {
+        transform: none;
+    }
+
+    /* Case studies */
+    .case-studies-grid {
+        gap: var(--space-8);
+    }
+
+    .case-study-content {
+        padding: var(--space-6);
+    }
+
+    /* Filter controls */
+    .filter-controls {
+        gap: var(--space-2);
+    }
+
+    .filter-btn {
+        padding: var(--space-2) var(--space-4);
+        font-size: var(--font-size-sm);
+    }
+
+    /* Category tabs */
+    .category-tabs {
+        gap: var(--space-1);
+    }
+
+    .category-tab {
+        padding: var(--space-2) var(--space-4);
+        font-size: var(--font-size-sm);
+    }
+
+    /* Search */
+    .search-container {
+        padding: 0 var(--space-4);
+    }
+
+    /* Questions section */
+    .questions-cta {
+        flex-direction: column;
+        gap: var(--space-3);
+    }
+
+    .questions-cta .btn {
+        width: 100%;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    /* Topics grid */
+    .topics-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    /* Social icons */
+    .social-icons {
+        gap: var(--space-3);
+    }
+
+    .social-link {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: var(--space-12) 0 var(--space-6);
+    }
+
+    .footer-nav {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+
+    /* Modal */
+    .modal-content {
+        width: 95%;
+        max-height: 95vh;
+    }
+
+    .modal-body {
+        padding: var(--space-6);
+    }
+
+    .modal-close {
+        width: 36px;
+        height: 36px;
+        top: var(--space-3);
+        right: var(--space-3);
+        font-size: var(--font-size-lg);
+    }
+}
+
+/* Tablet Styles (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        padding: 0 var(--space-6);
+    }
+
+    /* Hero adjustments */
+    .hero-content {
+        padding: 0 var(--space-6);
+        gap: var(--space-12);
+    }
+
+    .hero-text h1 {
+        font-size: var(--font-size-5xl);
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-lg);
+    }
+
+    /* Service grid */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-6);
+    }
+
+    /* Portfolio grid */
+    .portfolio-items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-6);
+    }
+
+    /* Testimonials */
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-6);
+    }
+
+    /* Stats grid */
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--space-6);
+    }
+
+    /* Team grid */
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-6);
+    }
+
+    /* Values grid */
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-6);
+    }
+
+    /* Package cards */
+    .packages-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-6);
+    }
+
+    /* Case studies */
+    .case-studies-grid {
+        gap: var(--space-10);
+    }
+
+    /* Contact info */
+    .contact-info {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-6);
+    }
+
+    /* Topics grid */
+    .topics-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-6);
+    }
+
+    /* Forms */
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 600px) {
+        .form-row {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+/* Small Desktop Styles (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Hero adjustments */
+    .hero-content {
+        padding: 0 var(--space-8);
+        gap: var(--space-12);
+    }
+
+    /* Service grid */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Portfolio grid */
+    .portfolio-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Testimonials */
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Team grid */
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Values grid */
+    .values-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Package cards */
+    .packages-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Package featured adjustment */
+    .package.featured {
+        transform: scale(1.02);
+    }
+
+    /* Stats grid */
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Contact info */
+    .contact-info {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Topics grid */
+    .topics-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Navigation improvements */
+    .nav-container {
+        padding: 0 var(--space-8);
+    }
+
+    .nav-menu {
+        gap: var(--space-6);
+    }
+
+    .nav-link {
+        font-size: var(--font-size-sm);
+    }
+
+    /* Footer adjustments */
+    .footer-content {
+        grid-template-columns: 1fr 2fr;
+        gap: var(--space-12);
+    }
+
+    .footer-nav {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-6);
+    }
+}
+
+/* Large Desktop Styles (1025px - 1200px) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    /* Optimized grid layouts */
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .portfolio-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .packages-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Spacing optimizations */
+    .section {
+        padding: var(--space-24) 0;
+    }
+
+    .section-lg {
+        padding: var(--space-32) 0;
+    }
+
+    .hero {
+        padding: var(--space-24) 0 var(--space-16);
+    }
+
+    /* Typography scaling */
+    .page-title {
+        font-size: clamp(3.5rem, 5vw, 4.5rem);
+    }
+
+    .section-title {
+        font-size: clamp(2.5rem, 4vw, 3.5rem);
+    }
+
+    /* Container padding */
+    .container {
+        padding: 0 var(--space-8);
+    }
+}
+
+/* Extra Large Desktop Styles (1201px and up) */
+@media (min-width: 1201px) {
+    /* Maximum container width */
+    .container {
+        max-width: 1400px;
+        padding: 0 var(--space-12);
+    }
+
+    /* Optimized layouts for large screens */
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .portfolio-items {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .packages-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Enhanced spacing */
+    .section {
+        padding: var(--space-32) 0;
+    }
+
+    .section-lg {
+        padding: var(--space-40) 0;
+    }
+
+    .hero {
+        padding: var(--space-32) 0 var(--space-20);
+    }
+
+    /* Large typography */
+    .page-title {
+        font-size: clamp(4rem, 6vw, 5rem);
+    }
+
+    .section-title {
+        font-size: clamp(3rem, 5vw, 4rem);
+    }
+
+    /* Optimized navigation */
+    .nav-menu {
+        gap: var(--space-10);
+    }
+
+    .nav-link {
+        font-size: var(--font-size-lg);
+    }
+
+    /* Footer layout */
+    .footer-content {
+        gap: var(--space-20);
+    }
+
+    .footer-nav {
+        gap: var(--space-10);
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    /* Remove hover effects on touch devices */
+    .service-card:hover,
+    .portfolio-item:hover,
+    .testimonial-card:hover,
+    .value-card:hover,
+    .package:hover,
+    .team-member:hover,
+    .case-study:hover {
+        transform: none;
+    }
+
+    /* Increase tap targets */
+    .btn {
+        min-height: 48px;
+        padding: var(--space-4) var(--space-8);
+    }
+
+    .nav-link {
+        padding: var(--space-4) 0;
+    }
+
+    .filter-btn,
+    .category-tab {
+        min-height: 44px;
+        padding: var(--space-3) var(--space-6);
+    }
+
+    /* Remove hover states that don't work well on touch */
+    .service-link:hover,
+    .case-study-link:hover {
+        gap: var(--space-2);
+    }
+
+    .service-link::after,
+    .case-study-link::after {
+        transform: none;
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Improve image quality on high DPI displays */
+    .portfolio-placeholder,
+    .photo-placeholder,
+    .case-study-placeholder {
+        background-size: 100px 100px;
+    }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    /* Disable animations for users who prefer reduced motion */
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .hero-element {
+        animation: none;
+    }
+
+    .skeleton {
+        animation: none;
+        background: var(--color-light-gray);
+    }
+}
+
+/* Print optimizations */
+@media print {
+    /* Hide non-essential elements */
+    .header,
+    .footer,
+    .nav,
+    .nav-toggle,
+    .filter-controls,
+    .category-tabs,
+    .social-links,
+    .btn,
+    .modal,
+    .faq-question,
+    .form-actions,
+    .file-upload {
+        display: none !important;
+    }
+
+    /* Ensure content fits on printed page */
+    .container {
+        max-width: none;
+        padding: 0;
+    }
+
+    /* Improve text readability */
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: #000;
+        background: #fff;
+    }
+
+    .page-hero,
+    .section,
+    .section-lg {
+        padding: 1rem 0;
+        page-break-inside: avoid;
+    }
+
+    /* Ensure images don't break across pages */
+    img,
+    .portfolio-image,
+    .member-photo {
+        page-break-inside: avoid;
+        max-width: 100%;
+    }
+
+    /* Improve typography for print */
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+        color: #000;
+    }
+
+    .page-title {
+        font-size: 24pt;
+    }
+
+    .section-title {
+        font-size: 18pt;
+    }
+
+    /* Remove backgrounds and shadows */
+    .service-card,
+    .portfolio-item,
+    .testimonial-card,
+    .value-card,
+    .package,
+    .team-member,
+    .case-study {
+        background: #fff !important;
+        border: 1px solid #ccc !important;
+        box-shadow: none !important;
+    }
+
+    /* Ensure links are visible */
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+
+    a::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+
+    a[href^="#"]::after {
+        content: "";
+    }
+}
+
+/* Landscape orientation optimizations */
+@media (orientation: landscape) and (max-height: 600px) {
+    /* Reduce vertical spacing on short landscape screens */
+    .hero {
+        min-height: auto;
+        padding: var(--space-12) 0 var(--space-8);
+    }
+
+    .section {
+        padding: var(--space-8) 0;
+    }
+
+    .page-hero {
+        padding: calc(80px + var(--space-8)) 0 var(--space-8);
+    }
+
+    /* Adjust hero content for landscape */
+    .hero-content {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        min-height: 50vh;
+    }
+
+    .hero-visual {
+        min-height: 300px;
+    }
+
+    /* Compress form steps */
+    .step-header {
+        margin-bottom: var(--space-4);
+        padding-bottom: var(--space-3);
+    }
+
+    .form-step {
+        padding: var(--space-4) 0;
+    }
+}
+
+/* Ultra-wide screens (2560px and up) */
+@media (min-width: 2560px) {
+    /* Scale up for ultra-wide displays */
+    .container {
+        max-width: 1600px;
+    }
+
+    /* Maximum typography sizes */
+    .page-title {
+        font-size: clamp(5rem, 8vw, 6rem);
+    }
+
+    .section-title {
+        font-size: clamp(4rem, 6vw, 5rem);
+    }
+
+    /* Larger spacing */
+    .section {
+        padding: var(--space-40) 0;
+    }
+
+    .section-lg {
+        padding: var(--space-48) 0;
+    }
+
+    /* Optimized grids for ultra-wide */
+    .services-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .portfolio-items {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .testimonials-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Small mobile devices in portrait */
+@media (max-width: 320px) and (orientation: portrait) {
+    /* Extreme mobile optimizations */
+    .container {
+        padding: 0 var(--space-3);
+    }
+
+    .page-title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .hero-text h1 {
+        font-size: var(--font-size-3xl);
+    }
+
+    .section-title {
+        font-size: var(--font-size-xl);
+    }
+
+    /* Compact buttons */
+    .btn {
+        padding: var(--space-3) var(--space-5);
+        font-size: var(--font-size-sm);
+    }
+
+    .btn-large {
+        padding: var(--space-4) var(--space-6);
+        font-size: var(--font-size-base);
+    }
+
+    /* Compact cards */
+    .service-card,
+    .portfolio-item,
+    .testimonial-card,
+    .value-card,
+    .package,
+    .team-member {
+        padding: var(--space-4);
+    }
+
+    /* Minimal spacing */
+    .section {
+        padding: var(--space-8) 0;
+    }
+
+    .gap-6 {
+        gap: var(--space-4);
+    }
+
+    .gap-8 {
+        gap: var(--space-6);
+    }
+}
