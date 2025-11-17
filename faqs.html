@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently asked questions about WebDev NexServ's web design, development, and digital services. Find answers about pricing, process, timeline, and more.">
+    <meta name="keywords" content="FAQs, web design questions, digital agency FAQ, pricing, process">
+    <title>FAQs - WebDev NexServ</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="index.html" class="brand-link">WebDev NexServ</a>
+                </div>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="works.html" class="nav-link">Works</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="faqs.html" class="nav-link active">FAQs</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-cta">
+                    <a href="contact.html" class="btn btn-primary">Schedule Consultation</a>
+                </div>
+
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- FAQs Hero -->
+        <section class="page-hero faqs-hero">
+            <div class="container">
+                <h1 class="page-title">Frequently Asked Questions</h1>
+                <p class="page-subtitle">Find answers to common questions about our services, process, and pricing</p>
+            </div>
+        </section>
+
+        <!-- FAQ Search -->
+        <section class="faq-search" id="faq-search">
+            <div class="container">
+                <div class="search-container">
+                    <div class="search-input-wrapper">
+                        <input type="text" id="faq-search-input" placeholder="Search for answers...">
+                        <button type="button" class="search-btn">
+                            <div class="search-icon"></div>
+                        </button>
+                    </div>
+                    <div class="search-results" id="search-results">
+                        <span id="result-count">12</span> questions found
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Categories -->
+        <section class="faq-categories" id="faq-categories">
+            <div class="container">
+                <div class="category-tabs">
+                    <button class="category-tab active" data-category="all">All Questions</button>
+                    <button class="category-tab" data-category="process">Process & Timeline</button>
+                    <button class="category-tab" data-category="pricing">Pricing & Payment</button>
+                    <button class="category-tab" data-category="technical">Technical Details</button>
+                    <button class="category-tab" data-category="support">Support & Maintenance</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="faq-section">
+            <div class="container">
+                <div class="faq-container">
+                    <!-- Process & Timeline -->
+                    <div class="faq-category" id="process">
+                        <h2 class="category-title">Process & Timeline</h2>
+
+                        <div class="faq-item" data-category="process">
+                            <button class="faq-question">
+                                <span>How long does a typical web design project take?</span>
+                                <span class="faq-toggle"></span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Project timelines vary based on complexity and scope:</p>
+                                <ul>
+                                    <li><strong>Simple website (5-10 pages):</strong> 4-6 weeks</li>
+                                    <li><strong>Medium website (10-25 pages):</strong> 6-10 weeks</li>
+                                    <li><strong>Complex website (25+ pages, custom features):</strong> 10-16 weeks</li>
+                                    <li><strong>E-commerce platform:</strong> 8-14 weeks</li>
+                                </ul>
+                                <p>These timelines include design, development, testing, and revisions. Rush delivery is available for an additional fee.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="process">
+                            <button class="faq-question">
+                                <span>What is your design process like?</span>
+                                <span class="faq-toggle"></span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Our design process follows these key phases:</p>
+                                <ol>
+                                    <li><strong>Discovery (1 week):</strong> Understanding your goals, audience, and requirements</li>
+                                    <li><strong>Research (1 week):</strong> Market analysis and competitor research</li>
+                                    <li><strong>Wireframing (1-2 weeks):</strong> Creating structural layouts and user flow</li>
+                                    <li><strong>Design (2-3 weeks):</strong> High-fidelity visual designs and mockups</li>
+                                    <li><strong>Development (3-8 weeks):</strong> Building the website functionality</li>
+                                    <li><strong>Testing (1 week):</strong> Quality assurance and user testing</li>
+                                    <li><strong>Launch (1 week):</strong> Deployment and final optimizations</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="process">
+                            <button class="faq-question">
+                                <span>How many rounds of revisions do I get?</span>
+                                <span class="faq-toggle"></span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Our packages include different revision rounds:</p>
+                                <ul>
+                                    <li><strong>Starter Package:</strong> 2 rounds of revisions</li>
+                                    <li><strong>Growth Package:</strong> 3 rounds of revisions</li>
+                                    <li><strong>Enterprise Package:</strong> Unlimited revisions</li>
+                                </ul>
+                                <p>Additional revisions can be purchased for $500 per round. We also offer ongoing retainer services for continuous optimization.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="process">
+                            <button class="faq-question">
+                                <span>Do you work with clients outside of your area?</span>
+                                <span class="faq-toggle"></span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes! We work with clients globally. Our team is experienced in remote collaboration and we use tools like Slack, Zoom, and project management platforms to ensure smooth communication regardless of location.</p>
+                                <p>We've successfully completed projects with clients across North America, Europe, and Asia.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pricing & Payment -->
+                    <div class="faq-category" id="pricing">
+                        <h2 class="category-title">Pricing & Payment</h2>
+
+                        <div class="faq-item" data-category="pricing">
+                            <button class="faq-question">
+                                <span>What are your typical project costs?</span>
+                                <span class="faq-toggle"></span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Our pricing varies based on project scope and complexity:</p>
+                                <ul>
+                                    <li><strong>Basic Website:</strong> $5,000 - $8,000</li>
+                                    <li><strong>Professional Website:</strong> $8,000 - $15,000</li>
+                                    <li><strong>E-commerce Platform:</strong> $12,000 - $25,000</li>
+                                    <li><strong>Custom Web Application:</strong> $20,000 - $50,000+</li>
+                                    <li><strong>Brand Identity Package:</strong> $5,000 - $12,000</li>
+                                </ul>
+                                <p>Contact us for a custom quote based on your specific requirements.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="pricing">
+                            <button class="faq-question">
+                                <span>What payment terms do you offer?</span>
+                                <span class="faq-toggle"></span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Our standard payment structure is:</p>
+                                <ul>
+                                    <li><strong>50% deposit</strong> to begin the project</li>
+                                    <li><strong>30% payment</strong> at design approval</li>
+                                    <li><strong>20% final payment</strong> upon project completion</li>
+                                </ul>
+                                <p>We accept wire transfers, credit cards, and ACH payments. For projects over $25,000, we can discuss milestone-based payment schedules.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="pricing">
+                            <button class="faq-question">
+                                <span>Do you offer payment plans?</span>
+                                <span class="faq-toggle"></span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, we offer flexible payment plans for qualified clients:</p>
+                                <ul>
+                                    <li><strong>3-month payment plan:</strong> Available for projects under $15,000</li>
+                                    <li><strong>6-month payment plan:</strong> Available for projects $15,000 - $30,000</li>
+                                    <li><strong>12-month payment plan:</strong> Available for projects over $30,000</li>
+                                </ul>
+                                <p>Payment plans require a 25% deposit and include a small financing fee. Contact us to discuss payment plan options.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="pricing">
+                            <button class="faq-question">
+                                <span>Are there any hidden costs?</span>
+                                <span class="faq-toggle"></span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>No hidden costs! Our quotes include all specified deliverables. However, additional costs may apply for:</p>
+                                <ul>
+                                    <li>Stock photography or premium fonts (if not provided)</li>
+                                    <li>Third-party software licenses or subscriptions</li>
+                                    <li>Website hosting and domain registration</li>
+                                    <li>Ongoing maintenance and support packages</li>
+                                    <li>Additional features requested after project scope is finalized</li>
+                                </ul>
+                                <p>All potential additional costs are discussed upfront and approved by you before any work begins.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Details -->
+                    <div class="faq-category" id="technical">
+                        <h2 class="category-title">Technical Details</h2>
+
+                        <div class="faq-item" data-category="technical">
+                            <button class="faq-question">
+                                <span>What technologies do you use?</span>
+                                <span class="faq-toggle"></span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We use modern, industry-standard technologies:</p>
+                                <ul>
+                                    <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript (ES6+), React, Vue.js</li>
+                                    <li><strong>Backend:</strong> Node.js, PHP, Python, Ruby on Rails</li>
+                                    <li><strong>CMS:</strong> WordPress, Contentful, Strapi, custom solutions</li>
+                                    <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
+                                    <li><strong>E-commerce:</strong> Shopify, WooCommerce, Magento, custom platforms</li>
+                                    <li><strong>DevOps:</strong> Docker, AWS, Google Cloud, CI/CD pipelines</li>
+                                </ul>
+                                <p>We choose the best technology stack based on your project requirements and goals.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="technical">
+                            <button class="faq-question">
+                                <span>Will my website be mobile-friendly?</span>
+                                <span class="faq-toggle"></span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Absolutely! All our websites are built with a mobile-first approach:</p>
+                                <ul>
+                                    <li>Responsive design that adapts to all screen sizes</li>
+                                    <li>Touch-friendly navigation and interactions</li>
+                                    <li>Optimized performance for mobile devices</li>
+                                    <li>Testing across popular mobile devices and browsers</li>
+                                    <li>Compliance with mobile usability best practices</li>
+                                </ul>
+                                <p>We ensure your website provides an excellent experience on smartphones, tablets, and desktop computers.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="technical">
+                            <button class="faq-question">
+                                <span>Can you work with our existing website or CMS?</span>
+                                <span class="faq-toggle"></span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, we can work with existing platforms and systems:</p>
+                                <ul>
+                                    <li>Website redesigns and upgrades</li>
+                                    <li>CMS migrations and integrations</li>
+                                    <li>Performance optimization for existing sites</li>
+                                    <li>Feature additions and customizations</li>
+                                    <li>API integrations with third-party services</li>
+                                </ul>
+                                <p>We'll assess your current setup and recommend the best approach for your goals.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="technical">
+                            <button class="faq-question">
+                                <span>Do you provide hosting and domain services?</span>
+                                <span class="faq-toggle"></span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>While we don't provide hosting directly, we offer comprehensive hosting management:</p>
+                                <ul>
+                                    <li>Hosting provider recommendations and setup</li>
+                                    <li>Domain registration and DNS configuration</li>
+                                    <li>SSL certificate installation and management</li>
+                                    <li>Server optimization and security setup</li>
+                                    <li>Backup and monitoring configuration</li>
+                                </ul>
+                                <p>We partner with top hosting providers and can manage your entire hosting infrastructure.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Support & Maintenance -->
+                    <div class="faq-category" id="support">
+                        <h2 class="category-title">Support & Maintenance</h2>
+
+                        <div class="faq-item" data-category="support">
+                            <button class="faq-question">
+                                <span>What kind of support do you provide after launch?</span>
+                                <span class="faq-toggle"></span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We offer comprehensive post-launch support:</p>
+                                <ul>
+                                    <li><strong>30-day warranty:</strong> Free bug fixes for issues discovered after launch</li>
+                                    <li><strong>Training sessions:</strong> Team training for content management</li>
+                                    <li><strong>Documentation:</strong> Detailed guides for website management</li>
+                                    <li><strong>Ongoing support:</strong> Maintenance packages available</li>
+                                </ul>
+                                <p>Our maintenance packages include regular updates, security monitoring, performance optimization, and technical support.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="support">
+                            <button class="faq-question">
+                                <span>Do you offer maintenance packages?</span>
+                                <span class="faq-toggle"></span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, we offer flexible maintenance packages:</p>
+                                <ul>
+                                    <li><strong>Basic ($299/month):</strong> Security updates, backups, monitoring</li>
+                                    <li><strong>Professional ($599/month):</strong> Includes basic + content updates, performance optimization</li>
+                                    <li><strong>Enterprise ($1,199+/month):</strong> Includes professional + priority support, custom development</li>
+                                </ul>
+                                <p>Custom packages are available based on your specific needs and requirements.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="support">
+                            <button class="faq-question">
+                                <span>How quickly do you respond to support requests?</span>
+                                <span class="faq-toggle"></span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Our response times vary by service level:</p>
+                                <ul>
+                                    <li><strong>Emergency issues:</strong> 2-4 hours (Enterprise package)</li>
+                                    <li><strong>Critical issues:</strong> 4-8 hours (Professional package)</li>
+                                    <li><strong>Standard requests:</strong> 24-48 hours (all packages)</li>
+                                    <li><strong>Non-urgent requests:</strong> 3-5 business days</li>
+                                </ul>
+                                <p>Emergency support is available 24/7 for Enterprise clients with critical system issues.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item" data-category="support">
+                            <button class="faq-question">
+                                <span>Can you help with SEO and marketing?</span>
+                                <span class="faq-toggle"></span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, we offer comprehensive digital marketing services:</p>
+                                <ul>
+                                    <li>SEO optimization and strategy</li>
+                                    <li>Content marketing and creation</li>
+                                    <li>Social media marketing</li>
+                                    <li>Pay-per-click advertising (PPC)</li>
+                                    <li>Email marketing campaigns</li>
+                                    <li>Analytics and reporting</li>
+                                </ul>
+                                <p>All our websites are built with SEO best practices, and we can create ongoing marketing strategies to drive traffic and conversions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Still Have Questions -->
+                <section class="still-have-questions" id="still-have-questions">
+                    <div class="container">
+                        <div class="questions-content">
+                            <h2>Still Have Questions?</h2>
+                            <p>Can't find the answer you're looking for? We're here to help!</p>
+                            <p>Reach out to our team and we'll get back to you within 24 hours.</p>
+
+                            <div class="questions-cta">
+                                <a href="contact.html" class="btn btn-primary btn-large">Ask Your Question</a>
+                                <a href="mailto:hello@webdevnexserv.com" class="btn btn-secondary btn-large">Email Us Directly</a>
+                            </div>
+
+                            <div class="contact-info">
+                                <div class="contact-method">
+                                    <h4>Email</h4>
+                                    <p>hello@webdevnexserv.com</p>
+                                </div>
+                                <div class="contact-method">
+                                    <h4>Phone</h4>
+                                    <p>+1 (555) 123-4567</p>
+                                </div>
+                                <div class="contact-method">
+                                    <h4>Response Time</h4>
+                                    <p>Within 24 hours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- Popular Topics -->
+        <section class="popular-topics" id="popular-topics">
+            <div class="container">
+                <h2>Popular Topics</h2>
+                <div class="topics-grid">
+                    <a href="#process" class="topic-card">
+                        <h3>Project Process</h3>
+                        <p>Learn about our design and development workflow</p>
+                    </a>
+                    <a href="#pricing" class="topic-card">
+                        <h3>Pricing Information</h3>
+                        <p>Understand our pricing structure and payment options</p>
+                    </a>
+                    <a href="#technical" class="topic-card">
+                        <h3>Technical Details</h3>
+                        <p>Explore our technology stack and capabilities</p>
+                    </a>
+                    <a href="#support" class="topic-card">
+                        <h3>Support Services</h3>
+                        <p>Discover our post-launch support and maintenance options</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>WebDev NexServ</h3>
+                    <p>We build digital experiences that convert.</p>
+                </div>
+
+                <div class="footer-nav">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="services.html">Web Design & Development</a></li>
+                            <li><a href="services.html">Brand Identity</a></li>
+                            <li><a href="services.html">Digital Strategy</a></li>
+                            <li><a href="services.html">E-commerce</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="works.html">Our Work</a></li>
+                            <li><a href="faqs.html">FAQs</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Dribbble</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 WebDev NexServ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/faqs.js"></script>
+</body>
+</html>

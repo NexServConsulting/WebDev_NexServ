@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore WebDev NexServ's portfolio of web design, development, branding, and digital strategy projects. See our work with startups and brands.">
+    <meta name="keywords" content="portfolio, web design projects, case studies, digital agency work">
+    <title>Our Work - WebDev NexServ Portfolio</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="index.html" class="brand-link">WebDev NexServ</a>
+                </div>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="works.html" class="nav-link active">Works</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="faqs.html" class="nav-link">FAQs</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-cta">
+                    <a href="contact.html" class="btn btn-primary">Schedule Consultation</a>
+                </div>
+
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Works Hero -->
+        <section class="page-hero works-hero">
+            <div class="container">
+                <h1 class="page-title">Digital Excellence in Action</h1>
+                <p class="page-subtitle">Explore our portfolio of successful projects and see how we've helped startups and brands achieve their digital goals</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Filter -->
+        <section class="portfolio-filter" id="portfolio-filter">
+            <div class="container">
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web-design">Web Design</button>
+                    <button class="filter-btn" data-filter="branding">Branding</button>
+                    <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                    <button class="filter-btn" data-filter="strategy">Digital Strategy</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                </div>
+
+                <div class="filter-stats">
+                    <span class="stats-text">Showing <span id="filter-count">12</span> projects</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid -->
+        <section class="portfolio-grid" id="portfolio-grid">
+            <div class="container">
+                <div class="portfolio-items">
+                    <!-- TechStart Platform -->
+                    <div class="portfolio-item" data-category="web-design strategy">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder"></div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="view-project" data-project="techstart">
+                                        <span>View Project</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>TechStart Platform</h3>
+                            <p>Complete digital platform for early-stage startup</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Web Design</span>
+                                <span class="tag">Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EcoBeauty E-commerce -->
+                    <div class="portfolio-item" data-category="ecommerce web-design">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder"></div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="view-project" data-project="ecobeauty">
+                                        <span>View Project</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>EcoBeauty Store</h3>
+                            <p>Sustainable beauty e-commerce platform</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">E-commerce</span>
+                                <span class="tag">Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FinanceFlow Rebrand -->
+                    <div class="portfolio-item" data-category="branding">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder"></div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="view-project" data-project="financeflow">
+                                        <span>View Project</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>FinanceFlow Brand</h3>
+                            <p>Fintech startup brand identity design</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Branding</span>
+                                <span class="tag">Logo Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SaaS Dashboard -->
+                    <div class="portfolio-item" data-category="web-design mobile">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder"></div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="view-project" data-project="saas">
+                                        <span>View Project</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>SaaS Analytics</h3>
+                            <p>B2B analytics dashboard design</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Web Design</span>
+                                <span class="tag">Dashboard</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Restaurant Chain -->
+                    <div class="portfolio-item" data-category="web-design strategy">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder"></div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="view-project" data-project="restaurant">
+                                        <span>View Project</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Bella Vista Restaurants</h3>
+                            <p>Multi-location restaurant website</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Web Design</span>
+                                <span class="tag">Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Banking App -->
+                    <div class="portfolio-item" data-category="mobile branding">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder"></div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="view-project" data-project="mobile-bank">
+                                        <span>View Project</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>SecureBank Mobile</h3>
+                            <p>Mobile banking app UI/UX design</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Mobile</span>
+                                <span class="tag">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fashion Brand -->
+                    <div class="portfolio-item" data-category="ecommerce branding">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder"></div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="view-project" data-project="fashion">
+                                        <span>View Project</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Luxury Fashion House</h3>
+                            <p>Premium fashion brand website</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">E-commerce</span>
+                                <span class="tag">Branding</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Healthcare Platform -->
+                    <div class="portfolio-item" data-category="web-design strategy">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder"></div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="view-project" data-project="healthcare">
+                                        <span>View Project</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>HealthConnect</h3>
+                            <p>Healthcare appointment booking platform</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Web Design</span>
+                                <span class="tag">Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fitness App -->
+                    <div class="portfolio-item" data-category="mobile branding">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder"></div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="view-project" data-project="fitness">
+                                        <span>View Project</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>FitLife Mobile App</h3>
+                            <p>Fitness tracking and workout app</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Mobile</span>
+                                <span class="tag">Branding</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Real Estate -->
+                    <div class="portfolio-item" data-category="web-design">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder"></div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="view-project" data-project="realestate">
+                                        <span>View Project</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Premium Properties</h3>
+                            <p>Luxury real estate website</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Web Design</span>
+                                <span class="tag">Real Estate</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Platform -->
+                    <div class="portfolio-item" data-category="web-design strategy">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder"></div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="view-project" data-project="education">
+                                        <span>View Project</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>EduLearn Platform</h3>
+                            <p>Online learning management system</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Web Design</span>
+                                <span class="tag">Education</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Food Delivery -->
+                    <div class="portfolio-item" data-category="mobile ecommerce">
+                        <div class="portfolio-image">
+                            <div class="portfolio-placeholder"></div>
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <button class="view-project" data-project="fooddelivery">
+                                        <span>View Project</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>QuickEats Delivery</h3>
+                            <p>Food delivery mobile app</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Mobile</span>
+                                <span class="tag">E-commerce</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More -->
+                <div class="load-more">
+                    <button class="btn btn-secondary" id="load-more">Load More Projects</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Detail Modal -->
+        <div class="project-modal" id="project-modal">
+            <div class="modal-overlay" id="modal-overlay"></div>
+            <div class="modal-content">
+                <button class="modal-close" id="modal-close">&times;</button>
+
+                <div class="modal-body">
+                    <!-- Dynamic content will be loaded here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <section class="portfolio-stats" id="portfolio-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3 class="stat-number">100+</h3>
+                        <p class="stat-label">Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">50+</h3>
+                        <p class="stat-label">Happy Clients</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">15</h3>
+                        <p class="stat-label">Team Members</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">98%</h3>
+                        <p class="stat-label">Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="portfolio-testimonials" id="portfolio-testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">What Our Clients Say</h2>
+                    <p class="section-subtitle">Hear from businesses we've helped transform</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"WebDev NexServ transformed our online presence completely. The new website not only looks amazing but has increased our conversion rate by 300%."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"></div>
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>CEO, TechStart</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Their team understood our vision perfectly and delivered a brand that truly represents who we are. The attention to detail is incredible."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"></div>
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <p>Founder, EcoBeauty</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Professional, creative, and deadline-oriented. They exceeded our expectations on every level and delivered exceptional results."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"></div>
+                            <div class="author-info">
+                                <h4>Amanda Rodriguez</h4>
+                                <p>CMO, FinanceFlow</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="portfolio-cta" id="portfolio-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Create Something Amazing Together?</h2>
+                    <p>Let's discuss your project and create a digital experience that drives results.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-large">Start Your Project</a>
+                        <a href="services.html" class="btn btn-secondary btn-large">Explore Our Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>WebDev NexServ</h3>
+                    <p>We build digital experiences that convert.</p>
+                </div>
+
+                <div class="footer-nav">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="services.html">Web Design & Development</a></li>
+                            <li><a href="services.html">Brand Identity</a></li>
+                            <li><a href="services.html">Digital Strategy</a></li>
+                            <li><a href="services.html">E-commerce</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="works.html">Our Work</a></li>
+                            <li><a href="faqs.html">FAQs</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Dribbble</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 WebDev NexServ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>
