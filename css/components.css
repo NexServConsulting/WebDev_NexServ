@@ -1394,7 +1394,7 @@
 
 .modal-content {
     position: relative;
-    background: var(--bg-primary);
+    background: var(--bg-secondary);
     border-radius: var(--radius-xl);
     max-width: 900px;
     width: 90%;
