@@ -343,7 +343,7 @@
     width: 60px;
     height: 60px;
     border-radius: var(--radius-lg);
-    background: var(--color-light-gray);
+    background: var(--color-dark-gray);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -353,7 +353,7 @@
 
 .service-card:hover .service-icon {
     transform: scale(1.1);
-    background: var(--color-dark-gray);
+    background: var(--color-light-gray);
 }
 
 .service-card h3 {
