@@ -308,7 +308,7 @@
 }
 
 .service-card {
-    background: var(--bg-primary);
+    background: var(--bg-secondary);
     padding: var(--space-8);
     border-radius: var(--radius-xl);
     border: 2px solid var(--border-light);
