@@ -624,7 +624,7 @@
 }
 
 .faq-item {
-    background: var(--bg-primary);
+    background: var(--bg-secondary);
     border: 2px solid var(--border-light);
     border-radius: var(--radius-lg);
     margin-bottom: var(--space-4);
@@ -654,7 +654,7 @@
 
 .faq-question:hover {
     color: var(--text-primary);
-    background: var(--color-light-gray);
+    background: var(--bg-light);
 }
 
 .faq-toggle {
