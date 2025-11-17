@@ -810,7 +810,7 @@
     padding: var(--space-8);
     border: 2px dashed var(--border-medium);
     border-radius: var(--radius-lg);
-    background: var(--color-light-gray);
+    background: var(--bg-secondary);
     cursor: pointer;
     transition: all var(--transition-normal);
 }
