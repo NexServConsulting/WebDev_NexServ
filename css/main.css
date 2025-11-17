@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
-    color: #000000;
+    color: var(--text-primary);
 }
 
 h1 {
@@ -68,18 +68,18 @@ h6 {
 
 p {
     margin-bottom: 1.5rem;
-    color: #333333;
+    color: var(--text-secondary);
     max-width: 65ch;
 }
 
 a {
-    color: #000000;
+    color: var(--text-primary);
     text-decoration: none;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a:hover {
-    color: #666666;
+    color: var(--text-muted);
 }
 
 ul, ol {
@@ -89,7 +89,7 @@ ul, ol {
 
 li {
     margin-bottom: 0.5rem;
-    color: #333333;
+    color: var(--text-secondary);
 }
 
 /* Color Palette */
