@@ -399,7 +399,7 @@
 }
 
 .portfolio-item {
-    background: var(--bg-primary);
+    background: var(--bg-secondary);
     border-radius: var(--radius-xl);
     overflow: hidden;
     border: 2px solid var(--border-light);
