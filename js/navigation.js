@@ -81,19 +81,8 @@ function initializeStickyHeader() {
             }
         }
 
-        // Hide/show header on scroll (mobile behavior)
-        if (window.innerWidth <= 768) {
-            if (currentScrollY > lastScrollY && currentScrollY > headerHeight + 50) {
-                // Scrolling down - hide header
-                header.style.transform = `translateY(-100%)`;
-            } else {
-                // Scrolling up or near top - show header
-                header.style.transform = `translateY(0)`;
-            }
-        } else {
-            // On desktop, always show header when scrolling
-            header.style.transform = `translateY(0)`;
-        }
+        // On all devices, always show header when scrolling
+        header.style.transform = `translateY(0)`;
 
         lastScrollY = currentScrollY;
     }, 16); // ~60fps
