@@ -114,7 +114,7 @@
         top: 100%;
         left: 0;
         right: 0;
-        background-color: var(--bg-primary);
+        background-color: var(--bg-secondary);
         border-top: 1px solid var(--border-light);
         padding: var(--space-6);
         flex-direction: column;
