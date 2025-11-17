@@ -1413,7 +1413,7 @@
     position: absolute;
     top: var(--space-4);
     right: var(--space-4);
-    background: var(--bg-primary);
+    background: var(--bg-secondary);
     border: 2px solid var(--border-light);
     border-radius: 50%;
     width: 40px;
