@@ -95,17 +95,17 @@ li {
 /* Color Palette */
 :root {
     /* Primary Colors */
-    --color-primary: #FFFFFF;
-    --color-secondary: #000000;
-    --color-tertiary: #333333;
-    --color-accent: #F5F5F5;
-    --color-highlight: #666666;
+    --color-primary: #000000;
+    --color-secondary: #FFFFFF;
+    --color-tertiary: #CCCCCC;
+    --color-accent: #1A1A1A;
+    --color-highlight: #999999;
 
     /* Extended Palette */
-    --color-light-gray: #F5F5F5;
-    --color-medium-gray: #666666;
-    --color-dark-gray: #333333;
-    --color-charcoal: #1A1A1A;
+    --color-light-gray: #1A1A1A;
+    --color-medium-gray: #999999;
+    --color-dark-gray: #E5E5E5;
+    --color-charcoal: #F5F5F5;
 
     /* Semantic Colors */
     --color-success: #22C55E;
@@ -114,31 +114,31 @@ li {
     --color-info: #3B82F6;
 
     /* Background Colors */
-    --bg-primary: #FFFFFF;
-    --bg-secondary: #F5F5F5;
-    --bg-dark: #000000;
-    --bg-light: #FAFAFA;
+    --bg-primary: #000000;
+    --bg-secondary: #1A1A1A;
+    --bg-dark: #FFFFFF;
+    --bg-light: #111111;
 
     /* Text Colors */
-    --text-primary: #000000;
-    --text-secondary: #333333;
-    --text-muted: #666666;
-    --text-light: #FFFFFF;
+    --text-primary: #FFFFFF;
+    --text-secondary: #E5E5E5;
+    --text-muted: #999999;
+    --text-light: #000000;
 
     /* Border Colors */
-    --border-light: #E5E5E5;
-    --border-medium: #D1D1D1;
-    --border-dark: #999999;
+    --border-light: #333333;
+    --border-medium: #666666;
+    --border-dark: #E5E5E5;
 
     /* Shadows */
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --shadow-sm: 0 1px 2px 0 rgba(255, 255, 255, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(255, 255, 255, 0.1), 0 2px 4px -1px rgba(255, 255, 255, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(255, 255, 255, 0.1), 0 4px 6px -2px rgba(255, 255, 255, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(255, 255, 255, 0.1), 0 10px 10px -5px rgba(255, 255, 255, 0.04);
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, #000000 0%, #333333 100%);
-    --gradient-subtle: linear-gradient(135deg, #F5F5F5 0%, #E5E5E5 100%);
+    --gradient-primary: linear-gradient(135deg, #FFFFFF 0%, #CCCCCC 100%);
+    --gradient-subtle: linear-gradient(135deg, #1A1A1A 0%, #333333 100%);
 
     /* Typography Scale */
     --font-size-xs: 0.75rem;
