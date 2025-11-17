@@ -759,7 +759,7 @@
 }
 
 .step-indicator {
-    background: var(--color-light-gray);
+    background: var(--bg-light);
     padding: var(--space-2) var(--space-4);
     border-radius: var(--radius-full);
     font-weight: 600;
