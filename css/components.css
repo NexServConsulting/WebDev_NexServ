@@ -1548,7 +1548,7 @@
 
 /* Still Have Questions Section */
 .still-have-questions {
-    background: var(--color-light-gray);
+    background: var(--bg-secondary);
     padding: var(--space-20) 0;
     margin-top: var(--space-20);
     border-radius: var(--radius-2xl);
