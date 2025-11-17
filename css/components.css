@@ -558,7 +558,7 @@
     top: var(--space-4);
     left: var(--space-6);
     font-size: 4rem;
-    color: var(--color-light-gray);
+    color: var(--bg-light);
     font-family: Georgia, serif;
     opacity: 0.5;
 }
